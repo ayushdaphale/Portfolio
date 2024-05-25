@@ -704,6 +704,18 @@ footer {
 }
 @media (max-width: 768px) {
   /* Styles for tablets and mobile devices */
+  .boxes {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 32px;
+  }
+  .skills2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 @media (max-width: 480px) {
