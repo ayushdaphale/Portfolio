@@ -71,18 +71,6 @@ nav ul li:hover {
   display: flex;
 }
 
-/* .leftsection{
-    font-size: 3rem;
-    margin: 20px 0;
-}
-.leftsection div{
-    font-size: 3rem;
-    margin: 12px 0;
-    color: rgb(38, 38, 238);
-}
-.leftsection p{
-    font-size: 1rem;
-} */
 .button {
   --width: 100px;
   --height: 35px;
@@ -248,7 +236,7 @@ ul {
 
 li::after {
   content: "";
-  display: block;
+
   height: 0px;
   transition: height 0.3s ease-in-out;
   pointer-events: none;
@@ -392,8 +380,6 @@ ul {
 }
 
 .myself .fila .col {
-  /* display: flex; */
-  /* background-color: #1db954; */
   width: 40vw;
   height: 35vh;
   margin: 12px 0px;
@@ -420,7 +406,6 @@ ul {
 .box-img img {
   width: 70%;
   height: 260px;
-  /* box-sizing: border-box; */
   border-radius: 15%;
   border: 5px solid #0ea6f8;
   margin: 0 80px;
@@ -432,9 +417,7 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
   gap: 20px;
-  /* Adjust the gap between images */
   padding: 20px;
-  /* Add padding around the container */
   background-color: #fff;
   border: 0.5px solid #ccc;
   border-radius: 10px;
@@ -451,9 +434,7 @@ ul {
 
 .bottom-image {
   grid-column: 1 / -1;
-  /* Span across both columns */
   justify-self: center;
-  /* Center the image horizontally */
   width: 700px;
 }
 
@@ -473,8 +454,6 @@ ul {
 
 .boxes {
   display: flex;
-  /* padding: 10px;
-justify-content: space-around; */
   margin: 0px 32px;
 }
 
@@ -564,6 +543,7 @@ justify-content: space-around; */
   padding-bottom: 10px;
 }
 .form-container {
+  margin-bottom: 12px;
   width: 800px;
   background: linear-gradient(#212121, #212121) padding-box,
               linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
@@ -678,6 +658,54 @@ justify-content: space-around; */
   background-color: #fff;
   border-color: #fff;
 }
+footer {
+  background-color: #010141;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+}
+.social-links a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.social-links a:hover {
+  color: #ddd;
+}
+.copyright {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.social-links{
+  display: flex;
+  justify-content: space-around;
+}
+.social-links .github{
+  padding-left: 450px;
+}
+.social-links .linkedin{
+  padding-right: 450px;
+}
+.social-links .instagram img{
+  border-radius: 12px;
+}
+.social-links .whatsapp img{
+  border-radius: 11px;
+}
+.social-links .twitterr img{
+  border-radius: 12px;
+}
+.social-links img{
+  background: tra;
+}
+@media (max-width: 768px) {
+  /* Styles for tablets and mobile devices */
+}
 
-
-
+@media (max-width: 480px) {
+  /* Styles for small mobile devices */
+}
