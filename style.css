@@ -54,7 +54,10 @@ nav ul li:hover {
   padding: 0 7%;
   align-items: center;
 }
-
+.blur{
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #1163ff;
+}
 .home-content {
   max-width: 600px;
 }
