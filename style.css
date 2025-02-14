@@ -58,7 +58,7 @@ nav ul li:hover {
 }
 .blur{
   position: absolute;
-  box-shadow: 0 0 1000px 50px #1163ff;
+  box-shadow: 0 0 1000px 50px #ffffff;
 }
 .home-content {
   max-width: 600px;
@@ -586,8 +586,8 @@ ul {
 }
 
 .box-img img {
-  width: 70%;
-  height: 260px;
+  width: 200%;
+  height: 600px;
   border-radius: 15%;
   border: 5px solid #0ea6f8;
   margin: 0 80px;
@@ -642,18 +642,18 @@ ul {
 .boxes .box1 {
   width: 161px;
   padding: 40px;
-  margin: 5px 40px;
+  /* margin: 5px 40px; */
 }
 
 .boxes .box1 img {
   width: 165px;
-  margin: 12px;
+  /* margin: 12px; */
 }
 
 .boxes .box2 {
   width: 161px;
   padding: 3px;
-  margin: 14px;
+  /* margin: 14px; */
 }
 
 .boxes .box2 img {
@@ -664,19 +664,19 @@ ul {
 .boxes .box3 img {
   width: 140px;
   padding: 25px;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .boxes .box4 img {
   width: 230px;
   padding: 30px;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .boxes .box5 img {
   width: 225px;
   padding: 35px;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .skills2 {
@@ -686,7 +686,6 @@ ul {
 
 .skills .img1 {
   width: 200px;
-    padding: 55px;
     margin: 8px 65px;
 }
 
@@ -694,24 +693,21 @@ ul {
   width: 280px;
   margin: 15px;
   width: 270px;
-    padding: 5px;
 }
 
 
 .skills .img2 {
   width: 230px;
-    padding: 40px;
     margin: 20px;
 }
 
 .skills .img2 img {
   width: 250px;
-  margin-left: 20px;
+  margin: 20px;
 }
 
 .skills .img3 img {
   width: 280px;
-    padding: 65px;
     margin: 11px;
 }
 .section{
@@ -966,7 +962,7 @@ footer {
   }
 
   .box-img img {
-    width: 50%;
+    width: 100%;
     margin: 20px 0;
   }
 
@@ -991,7 +987,6 @@ footer {
   .boxes .box4,
   .boxes .box5 {
     width: 100%;
-    margin: 10px 0;
     text-align: center;
   }
 
@@ -1009,7 +1004,6 @@ footer {
   .skills .img2,
   .skills .img3 {
     width: 100%;
-    margin: 10px 0;
     text-align: center;
   }
 
