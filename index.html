@@ -16,11 +16,11 @@
       <label for="menu-toggle" class="hamburger">&#9776;</label>
       <div class="right">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="Home" onclick="smoothScroll('home')">Home</a></li>
+          <li><a href="#about me"onclick="smoothScroll('about')">About Me</a></li>
+          <li><a href="#skills"onclick="smoothScroll('skills')">Skills</a></li>
+          <li><a href="#projects"onclick="smoothScroll('projects')">Projects</a></li>
+          <li><a href="#contact"onclick="smoothScroll('contact')">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -197,6 +197,37 @@
             </div>
           </section>
         </div>
+        <!-- Projects Section -->
+<section id="projects" class="projects">
+  <div class="projects-container">
+    <h1>My Projects</h1>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="picture1.png" alt="Project 1">
+        <h3>Bike Rental App</h3>
+        <p>A responsive Bike rental website built using HTML, CSS, and JavaScript. It Offers bikes for tourists, general peoples for there proper staycations.</p>
+        <a href="https://github.com/ayushdaphale/Projects" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="picture2.png" alt="Project 2">
+        <h3>Tourist App</h3>
+        <p>A Tourist guide web app helping out peoples to find there afordable journey's and comfortable places.</p>
+        <a href="https://github.com/ayushdaphale/Projects" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="picture3.png" alt="Project 3">
+        <h3>Project 3: Event Management</h3>
+        <p>An Event Management Website Which offers Prime Membership and promoting luxury hotels. To Get a proper feel of touch.</p>
+        <a href="https://github.com/ayushdaphale/Projects" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
         <section>
           <div class="form-container">
             <form class="form">
@@ -254,6 +285,15 @@
             strings: ['Web Developer', 'Data Anaylst', 'Cloud Engineer', 'IT Persuing'],
             typeSpeed: 75,
           });
+          function smoothScroll(target) {
+            const element = document.getElementById(target);
+            if (element) {
+              element.scrollIntoView({
+                behavior: 'smooth', // Smooth scroll
+                block: 'start'      // Align to the top of the section
+              });
+            }
+          }
         </script>
 </body>
 
