@@ -29,9 +29,13 @@
     <section class="home">
       <div class="home-content">
         <span class="blur"></span>
-      <span class="blur"></span>
         <h1>Hi, My name is Ayush</h1>
-        <h3 span id="element"></span>A Web Developer</h3>
+        <h3>I am a
+          <span style="--i:4;" data-text="Developer">Developer</span>
+          <span style="--i:3;"data-text="Angular Developer">Angular Developer</span>
+          <span style="--i:2;"data-text="Database Administrator">Database Administrator</span>
+          <span style="--i:1;"data-text="Programer">Programer</span>
+        </h3>
         <p>IT professional in my second year, passionate about technology and innovation. Fueled by determination, I
           excel in making impactful decisions and tackling challenges head-on. With a love for continuous learning,
           staying ahead in tech world. Innovation and excellence are my benchmarks.</p>
@@ -280,11 +284,7 @@
 
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <!-- Setup and start animation! -->
-        <script>
-          var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Data Anaylst', 'Cloud Engineer', 'IT Persuing'],
-            typeSpeed: 75,
-          });
+       <script>
           function smoothScroll(target) {
             const element = document.getElementById(target);
             if (element) {

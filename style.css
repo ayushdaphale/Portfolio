@@ -26,13 +26,31 @@ nav {
   height: 75px;
   background-color: rgb(12, 12, 48);
   font-family: 'poppins', sans-serif;
+  z-index: 100;
+  /* visibility: hidden; */
+opacity: 0;
+animation: show-content 1.0s linear forwards;
+animation-delay: 1.0s;
+}
+
+@keyframes show-content {
+  100% {
+    /* visibility: visible; */
+    opacity: 1;
+  }
 }
 
 nav ul {
   display: flex;
   list-style: none;
 }
-
+.download-link {
+  display: block; /* Make the <a> tag fill the button */
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit color from the button */
+}
 nav ul li {
   margin: 0 24px;
   color: white;
@@ -72,12 +90,47 @@ nav ul li:hover {
 }
 
 .home-content h3 {
-  font-size: 40px;
+  display: inline-block;
+  font-size: 35px;
   font-weight: 700;
   color: #00abf0;
-  display: flex;
+}
+.home-content h3 span{
+  position: relative;
+  display: inline-block;
+  color:transparent;
+  -webkit-text-stroke: .7px  #00abf0;
+  animation: display-text 16s linear infinite;
+  animation-delay: calc(-4s * var(--i));
 }
 
+@keyframes display-text {
+  25%,
+  100%{
+    display: none;
+  }
+}
+
+.home-content h3 span:before {
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  border-right: 2px solid #0a0845;
+  color: #143dd2;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: fill-text 4s linear infinite;
+}
+@keyframes fill-text {
+  10%,
+  100%{
+    width: 0;
+  }
+  70%,
+  90%{
+    width: 100%;
+  }
+}
 .button {
   --width: 100px;
   --height: 35px;
