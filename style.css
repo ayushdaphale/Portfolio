@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 .blur{
   position: absolute;
-  box-shadow: 0 0 1000px 50px #1946cc;
+  box-shadow: 0 0 800px 50px #011b68;
 }
 
 .home-content {
@@ -754,28 +754,28 @@ ul {
 }
 
 .img1 p {
-  margin-top: 10px;
+  margin-top: 40px;
   font-size: 25px;
   font-weight: 550;
 }
 
 .img2 p {
-  margin-top: 10px;
+  margin-top: 40px;
   font-size: 25px;
   font-weight: 550;
 }
 .img3 p {
-  margin-top: 10px;
+  margin-top: 40px;
   font-size: 25px;
   font-weight: 550;
 }
 .img4 p {
-  margin-top: 10px;
+  margin-top: 40px;
   font-size: 25px;
   font-weight: 550;
 }
 .img5 p {
-  margin-top: 10px;
+  margin-top: 40px;
   font-size: 25px;
   font-weight: 550;
 }
@@ -1084,7 +1084,7 @@ footer {
   .home {
     flex-direction: column;
     height: auto;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
   }
 
@@ -1174,7 +1174,7 @@ footer {
     width: 100%;
     max-width: 200px;
     position: relative;
-        top: 20%;
+        top: 2%;
         height: 60%;
   }
 
